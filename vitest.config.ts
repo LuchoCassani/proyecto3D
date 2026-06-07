@@ -8,6 +8,7 @@ export default defineConfig({
     environment: "jsdom",
     passWithNoTests: true,
     alias: {
+      "@": path.resolve(__dirname, "src"),
       "next/headers": path.resolve(__dirname, "src/__mocks__/next-headers.ts"),
       "next/navigation": path.resolve(
         __dirname,

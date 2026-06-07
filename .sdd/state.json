@@ -76,13 +76,13 @@
         "TASK-002": { "status": "completed", "title": "Ajustar estructura de carpetas según constitution", "completed_at": "2026-06-06T13:30:00Z" },
         "TASK-003": { "status": "completed", "title": "Crear proyecto en Supabase", "completed_at": "2026-06-07T14:15:00Z" },
         "TASK-004": { "status": "pending", "title": "Crear bucket en Cloudflare R2" },
-        "TASK-005": { "status": "pending", "title": "Crear repositorio GitHub y hacer push inicial" },
+        "TASK-005": { "status": "completed", "title": "Crear repositorio GitHub y hacer push inicial", "completed_at": "2026-06-07T14:30:00Z" },
         "TASK-006": { "status": "completed", "title": "Implementar validación de variables de entorno con Zod", "completed_at": "2026-06-06T13:35:00Z" },
-        "TASK-007": { "status": "pending", "title": "Implementar cliente Supabase server-side" },
-        "TASK-008": { "status": "pending", "title": "Implementar cliente Supabase browser-side" },
+        "TASK-007": { "status": "completed", "title": "Implementar cliente Supabase server-side", "completed_at": "2026-06-07T14:45:00Z" },
+        "TASK-008": { "status": "completed", "title": "Implementar cliente Supabase browser-side", "completed_at": "2026-06-07T14:45:00Z" },
         "TASK-009": { "status": "pending", "title": "Implementar cliente Cloudflare R2" },
         "TASK-010": { "status": "completed", "title": "Configurar Vitest con mocks para Next.js", "completed_at": "2026-06-06T13:45:00Z" },
-        "TASK-011": { "status": "pending", "title": "Escribir smoke test del cliente Supabase" },
+        "TASK-011": { "status": "completed", "title": "Escribir smoke test del cliente Supabase", "completed_at": "2026-06-07T14:50:00Z" },
         "TASK-012": { "status": "pending", "title": "Conectar repositorio a Vercel y configurar deploy" },
         "TASK-013": { "status": "pending", "title": "Verificar build y tests completos" }
       }
