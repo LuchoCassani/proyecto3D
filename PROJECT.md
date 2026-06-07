@@ -57,10 +57,11 @@ Base sobre la que se construye todo. Sin esto no hay nada.
 
 | Spec | Nombre | Estado |
 |---|---|---|
-| SPEC-101 | Scaffolding — Next.js + Supabase + Vercel + Cloudflare R2 | Pendiente |
-| SPEC-102 | Design system — Tailwind config + tokens + componentes base | Pendiente |
-| SPEC-103 | Modelo de datos — esquema PostgreSQL completo | Pendiente |
-| SPEC-104 | Auth panel interno — Supabase magic link + TOTP | Pendiente |
+| SPEC-101 | Scaffolding — Next.js + Supabase + Vercel + Cloudflare R2 | ✅ Completada |
+| SPEC-102 | Design system — Tailwind v4 @theme + tokens + fuentes | Pendiente |
+| SPEC-103 | Design system — Componentes UI base (Button, Input, Badge, Card, ProgressBar) | Pendiente |
+| SPEC-104 | Modelo de datos — esquema PostgreSQL completo + RLS | Pendiente |
+| SPEC-105 | Auth panel interno — Supabase magic link + TOTP | Pendiente |
 
 ### Fase 2 — Handlers backend (Series 2xx)
 Lógica de negocio. Cada handler es independiente y testeable.

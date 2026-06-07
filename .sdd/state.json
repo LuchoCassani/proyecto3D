@@ -2,9 +2,9 @@
   "version": "1.0.0",
   "project": "dryada-3d",
   "initialized_at": "2026-06-03T21:04:00Z",
-  "active_feature": "SPEC-101-scaffolding",
-  "last_session_notes": "Sesión 2026-06-07. SPEC-101 completada al 100%. Completadas: TASK-003 (Supabase), TASK-004 (R2 bucket), TASK-005 (GitHub privado), TASK-007/008 (clientes Supabase server+browser), TASK-009 (cliente R2 con lazy init), TASK-011 (smoke test), TASK-012 (Vercel deploy en https://proyecto3-d-eta.vercel.app/), TASK-013 (tsc + build + test verdes). Post-review fixes: SUPABASE_SERVICE_ROLE_KEY agregada al schema Zod, r2Client con lazy initialization, mock next/headers convertido a async, import dinámico movido dentro del it(), aliases movidos a resolve.alias.",
-  "last_session_end": "2026-06-07T16:00:00Z",
+  "active_feature": "SPEC-102-design-system",
+  "last_session_notes": "Sesión 2026-06-07. SPEC-101 cerrada (completed, 13/13 tareas). PROJECT.md actualizado: design system dividido en SPEC-102 (tokens/fuentes) y SPEC-103 (componentes), modelo de datos pasó a SPEC-104, auth a SPEC-105. SPEC-102 completó ciclo specify→clarify→plan→tasks. Estado: tasked, 5 tareas pendientes. Próxima sesión: implementar TASK-001 (next/font en layout.tsx) y TASK-002 (@theme en globals.css) en paralelo.",
+  "last_session_end": "2026-06-07T18:30:00Z",
   "coaching_profile": {
     "problem_vs_solution": { "scaffolded": 0, "unscaffolded": 1 },
     "user_specificity": { "scaffolded": 0, "unscaffolded": 1 },
@@ -18,7 +18,7 @@
     "security": { "scaffolded": 1, "unscaffolded": 0 },
     "configurability": { "scaffolded": 0, "unscaffolded": 1 }
   },
-  "completed_features": 0,
+  "completed_features": 1,
   "milestones": {
     "adr_explained": false,
     "orphan_code_explained": false,
@@ -34,8 +34,47 @@
   },
   "active_feature": "SPEC-101-scaffolding",
   "features": {
+    "SPEC-102-design-system": {
+      "state": "tasked",
+      "spec_path": "specs/SPEC-102-design-system/spec.md",
+      "plan_path": "specs/SPEC-102-design-system/plan.md",
+      "tasks_path": "specs/SPEC-102-design-system/tasks.md",
+      "transitions": [
+        {
+          "from": "drafting",
+          "to": "specified",
+          "at": "2026-06-07T17:00:00Z",
+          "command": "sdd-specify"
+        },
+        {
+          "from": "specified",
+          "to": "clarified",
+          "at": "2026-06-07T17:20:00Z",
+          "command": "sdd-clarify"
+        },
+        {
+          "from": "clarified",
+          "to": "planned",
+          "at": "2026-06-07T17:40:00Z",
+          "command": "sdd-plan"
+        },
+        {
+          "from": "planned",
+          "to": "tasked",
+          "at": "2026-06-07T18:00:00Z",
+          "command": "sdd-tasks"
+        }
+      ],
+      "tasks": {
+        "TASK-001": { "status": "pending", "title": "Configurar next/font en layout.tsx" },
+        "TASK-002": { "status": "pending", "title": "Configurar @theme en globals.css con colores, gradientes y layout tokens" },
+        "TASK-003": { "status": "pending", "title": "Agregar tokens semánticos y escala tipográfica en :root" },
+        "TASK-004": { "status": "pending", "title": "Agregar bloque dark mode comentado en globals.css" },
+        "TASK-005": { "status": "pending", "title": "Verificar build completo y criterios de aceptación" }
+      }
+    },
     "SPEC-101-scaffolding": {
-      "state": "implementing",
+      "state": "completed",
       "spec_path": "specs/SPEC-101-scaffolding/spec.md",
       "plan_path": "specs/SPEC-101-scaffolding/plan.md",
       "tasks_path": "specs/SPEC-101-scaffolding/tasks.md",
@@ -69,6 +108,18 @@
           "to": "implementing",
           "at": "2026-06-06T13:26:00Z",
           "command": "sdd-implement"
+        },
+        {
+          "from": "implementing",
+          "to": "validating",
+          "at": "2026-06-07T16:25:00Z",
+          "command": "manual-close"
+        },
+        {
+          "from": "validating",
+          "to": "completed",
+          "at": "2026-06-07T16:25:00Z",
+          "command": "manual-close"
         }
       ],
       "tasks": {
