@@ -40,7 +40,7 @@ Todas las carpetas existen en el repositorio. `git status` no muestra carpetas f
 
 ## TASK-003: Crear proyecto en Supabase
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-003  
 **Complexity**: S  
 **Depends on**: none  
@@ -56,7 +56,7 @@ Las dos variables están en `.env.local` con valores reales de Supabase. El dash
 
 ## TASK-004: Crear bucket en Cloudflare R2
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-004  
 **Complexity**: S  
 **Depends on**: none  
@@ -72,7 +72,7 @@ Las cuatro variables R2 están en `.env.local` con valores reales. El bucket apa
 
 ## TASK-005: Crear repositorio GitHub y hacer push inicial
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-006  
 **Complexity**: S  
 **Depends on**: TASK-001, TASK-002  
@@ -95,7 +95,7 @@ El repositorio existe en GitHub, tiene commits, y `.env.local` no aparece en nin
 **Files**: `src/env.ts`, `.env.local.example`
 
 ### Description
-Crear `src/env.ts` con un schema Zod que valide todas las variables de entorno requeridas (Supabase URL + anon key, R2 credentials × 4). El módulo debe validar al ser importado — no lazy. Si falta alguna variable o tiene formato inválido (ej: URL mal formateada), lanzar un error con la lista exacta de variables problemáticas. Crear `.env.local.example` documentando cada variable con descripción de su uso y de dónde obtenerla.
+Crear `src/env.ts` con un schema Zod que valide todas las variables de entorno requeridas (Supabase URL + anon key + service role key, R2 credentials × 4 — 7 variables en total). El módulo debe validar al ser importado — no lazy. Si falta alguna variable o tiene formato inválido (ej: URL mal formateada), lanzar un error con la lista exacta de variables problemáticas. Crear `.env.local.example` documentando cada variable con descripción de su uso y de dónde obtenerla.
 
 ### Validation
 1. Con `.env.local` completo: `npm run dev` arranca sin errores.
@@ -106,7 +106,7 @@ Crear `src/env.ts` con un schema Zod que valide todas las variables de entorno r
 
 ## TASK-007: Implementar cliente Supabase server-side
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-003, NFR-003, EC-004  
 **Complexity**: M  
 **Depends on**: TASK-003, TASK-006  
@@ -124,7 +124,7 @@ Crear `src/services/supabase/server.ts` usando `createServerClient` de `@supabas
 
 ## TASK-008: Implementar cliente Supabase browser-side
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-003, NFR-003, EC-004  
 **Complexity**: S  
 **Depends on**: TASK-003, TASK-006  
@@ -140,7 +140,7 @@ El archivo exporta `createClient()`. TypeScript compila sin errores. El cliente 
 
 ## TASK-009: Implementar cliente Cloudflare R2
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-004, NFR-003, EC-003, C-4  
 **Complexity**: M  
 **Depends on**: TASK-004, TASK-006  
@@ -174,7 +174,7 @@ Crear `vitest.config.ts` con el plugin de React y configuración de jsdom. Agreg
 
 ## TASK-011: Escribir smoke test del cliente Supabase
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-008  
 **Complexity**: S  
 **Depends on**: TASK-007, TASK-008, TASK-010  
@@ -190,7 +190,7 @@ Crear `src/services/supabase/smoke.test.ts` con un test que verifica que `create
 
 ## TASK-012: Conectar repositorio a Vercel y configurar deploy
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: FR-006  
 **Complexity**: S  
 **Depends on**: TASK-005, TASK-006, TASK-007, TASK-008, TASK-009  
@@ -206,7 +206,7 @@ El dashboard de Vercel muestra el deploy como exitoso (verde). La URL pública d
 
 ## TASK-013: Verificar build y tests completos
 
-**Status**: pending  
+**Status**: completed  
 **Requirements**: NFR-001, FR-008  
 **Complexity**: S  
 **Depends on**: TASK-011, TASK-012  
