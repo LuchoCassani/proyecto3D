@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "project": "dryada-3d",
+  "initialized_at": "2026-06-03T21:04:00Z",
+  "active_feature": "SPEC-101-scaffolding",
+  "last_session_notes": "Sesión 2026-06-07. Completada TASK-003: proyecto Supabase creado, variables NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY y SUPABASE_SERVICE_ROLE_KEY cargadas en .env.local, validadas por Zod al arrancar npm run dev sin errores. Pendiente: TASK-004 (R2), TASK-005 (GitHub), TASK-007, TASK-008, TASK-009, TASK-011, TASK-012, TASK-013.",
+  "last_session_end": "2026-06-07T14:15:00Z",
+  "coaching_profile": {
+    "problem_vs_solution": { "scaffolded": 0, "unscaffolded": 1 },
+    "user_specificity": { "scaffolded": 0, "unscaffolded": 1 },
+    "measurable_outcomes": { "scaffolded": 0, "unscaffolded": 1 },
+    "non_goals": { "scaffolded": 0, "unscaffolded": 1 },
+    "quantified_nfrs": { "scaffolded": 1, "unscaffolded": 0 },
+    "edge_cases": { "scaffolded": 0, "unscaffolded": 1 },
+    "testable_criteria": { "scaffolded": 0, "unscaffolded": 1 },
+    "data_models": { "scaffolded": 0, "unscaffolded": 1 },
+    "api_contracts": { "scaffolded": 0, "unscaffolded": 1 },
+    "security": { "scaffolded": 1, "unscaffolded": 0 },
+    "configurability": { "scaffolded": 0, "unscaffolded": 1 }
+  },
+  "completed_features": 0,
+  "milestones": {
+    "adr_explained": false,
+    "orphan_code_explained": false,
+    "atomic_tasks_explained": false,
+    "gap_taxonomy_explained": false,
+    "role_transition_explained": true,
+    "requirement_traceability_explained": true,
+    "atomic_tasks_explained": true
+  },
+  "prd": {
+    "status": "none",
+    "path": "specs/prd.md"
+  },
+  "active_feature": "SPEC-101-scaffolding",
+  "features": {
+    "SPEC-101-scaffolding": {
+      "state": "implementing",
+      "spec_path": "specs/SPEC-101-scaffolding/spec.md",
+      "plan_path": "specs/SPEC-101-scaffolding/plan.md",
+      "tasks_path": "specs/SPEC-101-scaffolding/tasks.md",
+      "transitions": [
+        {
+          "from": "drafting",
+          "to": "specified",
+          "at": "2026-06-03T21:10:00Z",
+          "command": "manual-specify"
+        },
+        {
+          "from": "specified",
+          "to": "clarified",
+          "at": "2026-06-03T21:20:00Z",
+          "command": "sdd-clarify"
+        },
+        {
+          "from": "clarified",
+          "to": "planned",
+          "at": "2026-06-03T21:30:00Z",
+          "command": "sdd-plan"
+        },
+        {
+          "from": "planned",
+          "to": "tasked",
+          "at": "2026-06-03T21:40:00Z",
+          "command": "sdd-tasks"
+        },
+        {
+          "from": "tasked",
+          "to": "implementing",
+          "at": "2026-06-06T13:26:00Z",
+          "command": "sdd-implement"
+        }
+      ],
+      "tasks": {
+        "TASK-001": { "status": "completed", "title": "Inicializar proyecto Next.js con create-next-app", "completed_at": "2026-06-06T13:26:00Z" },
+        "TASK-002": { "status": "completed", "title": "Ajustar estructura de carpetas según constitution", "completed_at": "2026-06-06T13:30:00Z" },
+        "TASK-003": { "status": "completed", "title": "Crear proyecto en Supabase", "completed_at": "2026-06-07T14:15:00Z" },
+        "TASK-004": { "status": "pending", "title": "Crear bucket en Cloudflare R2" },
+        "TASK-005": { "status": "pending", "title": "Crear repositorio GitHub y hacer push inicial" },
+        "TASK-006": { "status": "completed", "title": "Implementar validación de variables de entorno con Zod", "completed_at": "2026-06-06T13:35:00Z" },
+        "TASK-007": { "status": "pending", "title": "Implementar cliente Supabase server-side" },
+        "TASK-008": { "status": "pending", "title": "Implementar cliente Supabase browser-side" },
+        "TASK-009": { "status": "pending", "title": "Implementar cliente Cloudflare R2" },
+        "TASK-010": { "status": "completed", "title": "Configurar Vitest con mocks para Next.js", "completed_at": "2026-06-06T13:45:00Z" },
+        "TASK-011": { "status": "pending", "title": "Escribir smoke test del cliente Supabase" },
+        "TASK-012": { "status": "pending", "title": "Conectar repositorio a Vercel y configurar deploy" },
+        "TASK-013": { "status": "pending", "title": "Verificar build y tests completos" }
+      }
+    }
+  },
+  "allowed_transitions": {
+    "drafting": ["specified"],
+    "specified": ["clarified", "planned", "drafting"],
+    "clarified": ["planned", "drafting"],
+    "planned": ["tasked", "drafting"],
+    "tasked": ["implementing", "drafting"],
+    "implementing": ["validating", "tasked", "drafting"],
+    "validating": ["completed", "implementing", "drafting"],
+    "completed": ["drafting"]
+  }
+}
